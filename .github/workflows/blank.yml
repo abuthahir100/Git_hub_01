@@ -8,11 +8,6 @@ jobs:
         run: |
           echo "hello from dev" 
           echo "abu"
-  Test:
-    runs-on: ubutu-latest
-    steps:
-      - name: Test_job
-        run: echo "hello from test"
 
   Production:
     runs-on: ubuntu-latest
