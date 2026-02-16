@@ -1,13 +1,26 @@
 name: hello
 on: workflow_dispatch
 jobs:
-  hello:
+  Dev:
     runs-on: ubuntu-latest
     steps:
-      - name: hello step
+      - name: DEV_JOB
         run: |
-          echo "hello world" 
+          echo "hello from dev" 
           echo "abu"
+  Test:
+    runs-on: ubutu-latest
+    steps:
+      - name: Test_job
+        run: echo "hello from test"
+
+  Production:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Production_job
+        run: echo "hello from production"
+    
+    
         
         
   
